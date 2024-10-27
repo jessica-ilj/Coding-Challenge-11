@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Order Management</title>
+</head>
+<body>
+    <!-- Page Heading -->
+    <h2>Place Your Order</h2>
+    
+    <!-- Product Selector Label and Dropdown -->
+    <label for="product-selector">Select a Product:</label>
+    <select id="product-selector">
+        <option value="80">Fear of God Essentials T-Shirt - Black - $80</option>
+        <option value="85">Fear of God Essentials T-Shirt - Cream - $85</option>
+        <option value="90">Fear of God Essentials T-Shirt - Gray - $90</option>
+    </select>
+    
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    
+    <p>Total Price: $<span id="total-price">80</span></p>
+    
+    <button id="place-order">Place Order</button>
+    
+     <!-- Order Summary Display -->
+    <p id="order-summary"></p>
+    
+    <script src="main.js"></script>
+</body>
+</html>
